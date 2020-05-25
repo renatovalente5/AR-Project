@@ -1,0 +1,41 @@
+May 10 16:14:58.199 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+May 10 16:14:58.199 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 55975.
+May 10 16:14:58.210 HYPERVISOR: exec_cmd: hypervisor version 
+May 10 16:14:58.210 HYPERVISOR: exec_cmd: hypervisor working_dir /home/rita/Desktop/Projeto-AR-fase2/project-files/dynamips 
+May 10 16:14:58.210 GENERAL: working_dir=/home/rita/Desktop/Projeto-AR-fase2/project-files/dynamips
+May 10 16:14:58.210 HYPERVISOR: exec_cmd: hypervisor working_dir /home/rita/Desktop/Projeto-AR-fase2/project-files/dynamips/9fda2985-abcc-462b-90c9-8c83de213f52 
+May 10 16:14:58.210 GENERAL: working_dir=/home/rita/Desktop/Projeto-AR-fase2/project-files/dynamips/9fda2985-abcc-462b-90c9-8c83de213f52
+May 10 16:14:58.210 HYPERVISOR: exec_cmd: vm create SERV_SWL3_2 8 c3725 
+May 10 16:14:58.210 VM: VM SERV_SWL3_2 created.
+May 10 16:14:58.210 HYPERVISOR: exec_cmd: vm set_con_tcp_port SERV_SWL3_2 5008 
+May 10 16:14:58.210 HYPERVISOR: exec_cmd: c3725 get_mac_addr SERV_SWL3_2 
+May 10 16:14:58.210 HYPERVISOR: exec_cmd: vm set_disk0 SERV_SWL3_2 1 
+May 10 16:14:58.210 HYPERVISOR: exec_cmd: vm get_status SERV_SWL3_2 
+May 10 16:14:58.211 HYPERVISOR: exec_cmd: vm set_idle_pc SERV_SWL3_2 0x60a6a1e0 
+May 10 16:14:58.211 HYPERVISOR: exec_cmd: vm set_ios SERV_SWL3_2 /home/rita/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21 (2).image 
+May 10 16:14:58.211 HYPERVISOR: exec_cmd: c3725 set_mac_addr SERV_SWL3_2 c208.1553.0000 
+May 10 16:14:58.211 HYPERVISOR: exec_cmd: vm set_nvram SERV_SWL3_2 256 
+May 10 16:14:58.211 HYPERVISOR: exec_cmd: vm set_ram SERV_SWL3_2 256 
+May 10 16:14:58.211 HYPERVISOR: exec_cmd: vm get_status SERV_SWL3_2 
+May 10 16:14:58.212 HYPERVISOR: exec_cmd: vm slot_add_binding SERV_SWL3_2 1 0 NM-16ESW 
+May 10 16:15:02.719 HYPERVISOR: exec_cmd: nio create_udp udp-37b73546-67e3-4a66-9e90-c81a1bc600b8 10098 127.0.0.1 10099 
+May 10 16:15:02.933 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SERV_SWL3_2 0 0 udp-37b73546-67e3-4a66-9e90-c81a1bc600b8 
+May 10 16:15:02.934 HYPERVISOR: exec_cmd: vm get_status SERV_SWL3_2 
+May 10 16:15:03.028 HYPERVISOR: exec_cmd: nio create_udp udp-ca809dfc-5458-4b80-a87a-bda7ba270d56 10104 127.0.0.1 10105 
+May 10 16:15:03.029 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SERV_SWL3_2 0 1 udp-ca809dfc-5458-4b80-a87a-bda7ba270d56 
+May 10 16:15:03.029 HYPERVISOR: exec_cmd: vm get_status SERV_SWL3_2 
+May 10 16:15:03.899 HYPERVISOR: exec_cmd: nio create_udp udp-ec69e793-79ae-46aa-971c-0704c51a6b37 10142 127.0.0.1 10143 
+May 10 16:15:03.900 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SERV_SWL3_2 1 0 udp-ec69e793-79ae-46aa-971c-0704c51a6b37 
+May 10 16:15:03.900 HYPERVISOR: exec_cmd: vm get_status SERV_SWL3_2 
+May 10 16:15:04.760 HYPERVISOR: exec_cmd: nio create_udp udp-b04b6930-5491-4f16-bea2-d18b9f3e8e37 10176 127.0.0.1 10177 
+May 10 16:15:04.761 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SERV_SWL3_2 1 1 udp-b04b6930-5491-4f16-bea2-d18b9f3e8e37 
+May 10 16:15:04.761 HYPERVISOR: exec_cmd: vm get_status SERV_SWL3_2 
+May 10 16:17:02.911 HYPERVISOR: exec_cmd: vm get_status SERV_SWL3_2 
+May 10 16:17:02.912 HYPERVISOR: exec_cmd: vm extract_config SERV_SWL3_2 
+May 10 16:17:02.992 HYPERVISOR: exec_cmd: vm get_status SERV_SWL3_2 
+May 10 16:17:02.992 HYPERVISOR: exec_cmd: vm extract_config SERV_SWL3_2 
+May 10 16:17:02.992 HYPERVISOR: exec_cmd: vm delete SERV_SWL3_2 
+May 10 16:17:02.992 VM: VM SERV_SWL3_2 destroyed.
+May 10 16:17:02.993 HYPERVISOR: exec_cmd: hypervisor stop 
+May 10 16:17:03.380 HYPERVISOR: Stopped.
+May 10 16:17:03.380 GENERAL: reset done.

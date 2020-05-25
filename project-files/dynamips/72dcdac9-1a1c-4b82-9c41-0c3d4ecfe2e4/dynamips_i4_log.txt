@@ -1,0 +1,45 @@
+May 10 16:14:58.000 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+May 10 16:14:58.000 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 39425.
+May 10 16:14:58.012 HYPERVISOR: exec_cmd: hypervisor version 
+May 10 16:14:58.013 HYPERVISOR: exec_cmd: hypervisor working_dir /home/rita/Desktop/Projeto-AR-fase2/project-files/dynamips 
+May 10 16:14:58.013 GENERAL: working_dir=/home/rita/Desktop/Projeto-AR-fase2/project-files/dynamips
+May 10 16:14:58.013 HYPERVISOR: exec_cmd: hypervisor working_dir /home/rita/Desktop/Projeto-AR-fase2/project-files/dynamips/7eaa8aa6-df43-4d14-9647-3923ceb12757 
+May 10 16:14:58.013 GENERAL: working_dir=/home/rita/Desktop/Projeto-AR-fase2/project-files/dynamips/7eaa8aa6-df43-4d14-9647-3923ceb12757
+May 10 16:14:58.014 HYPERVISOR: exec_cmd: vm create ANTENA_LISBOA 6 c7200 
+May 10 16:14:58.014 VM: VM ANTENA_LISBOA created.
+May 10 16:14:58.015 HYPERVISOR: exec_cmd: vm set_con_tcp_port ANTENA_LISBOA 5005 
+May 10 16:14:58.015 HYPERVISOR: exec_cmd: c7200 get_mac_addr ANTENA_LISBOA 
+May 10 16:14:58.016 HYPERVISOR: exec_cmd: vm get_status ANTENA_LISBOA 
+May 10 16:14:58.016 HYPERVISOR: exec_cmd: vm slot_add_binding ANTENA_LISBOA 0 0 C7200-IO-FE 
+May 10 16:14:58.017 HYPERVISOR: exec_cmd: vm set_disk0 ANTENA_LISBOA 0 
+May 10 16:14:58.018 HYPERVISOR: exec_cmd: vm get_status ANTENA_LISBOA 
+May 10 16:14:58.018 HYPERVISOR: exec_cmd: vm set_idle_pc ANTENA_LISBOA 0x60608040 
+May 10 16:14:58.020 HYPERVISOR: exec_cmd: vm set_ios ANTENA_LISBOA /home/rita/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+May 10 16:14:58.021 HYPERVISOR: exec_cmd: c7200 set_mac_addr ANTENA_LISBOA ca06.1426.0000 
+May 10 16:14:58.021 HYPERVISOR: exec_cmd: vm set_nvram ANTENA_LISBOA 512 
+May 10 16:14:58.022 HYPERVISOR: exec_cmd: vm set_ram ANTENA_LISBOA 512 
+May 10 16:14:58.023 HYPERVISOR: exec_cmd: vm get_status ANTENA_LISBOA 
+May 10 16:14:58.023 HYPERVISOR: exec_cmd: vm slot_remove_binding ANTENA_LISBOA 0 0 
+May 10 16:14:58.024 HYPERVISOR: exec_cmd: vm get_status ANTENA_LISBOA 
+May 10 16:14:58.024 HYPERVISOR: exec_cmd: vm slot_add_binding ANTENA_LISBOA 0 0 C7200-IO-2FE 
+May 10 16:14:58.024 HYPERVISOR: exec_cmd: vm get_status ANTENA_LISBOA 
+May 10 16:14:58.025 HYPERVISOR: exec_cmd: vm slot_add_binding ANTENA_LISBOA 1 0 PA-2FE-TX 
+May 10 16:14:58.025 HYPERVISOR: exec_cmd: vm get_status ANTENA_LISBOA 
+May 10 16:14:58.026 HYPERVISOR: exec_cmd: vm slot_add_binding ANTENA_LISBOA 2 0 PA-2FE-TX 
+May 10 16:14:58.026 HYPERVISOR: exec_cmd: vm get_status ANTENA_LISBOA 
+May 10 16:14:58.026 HYPERVISOR: exec_cmd: vm slot_add_binding ANTENA_LISBOA 3 0 PA-2FE-TX 
+May 10 16:15:00.726 HYPERVISOR: exec_cmd: nio create_udp udp-71c7bb56-b3dd-4685-a55b-7ade06598784 10038 127.0.0.1 10039 
+May 10 16:15:00.935 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ANTENA_LISBOA 1 0 udp-71c7bb56-b3dd-4685-a55b-7ade06598784 
+May 10 16:15:00.935 HYPERVISOR: exec_cmd: vm get_status ANTENA_LISBOA 
+May 10 16:15:01.499 HYPERVISOR: exec_cmd: nio create_udp udp-28b3cece-5ecb-4d34-bd08-f8a3965ca6e8 10052 127.0.0.1 10053 
+May 10 16:15:01.501 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ANTENA_LISBOA 0 0 udp-28b3cece-5ecb-4d34-bd08-f8a3965ca6e8 
+May 10 16:15:01.502 HYPERVISOR: exec_cmd: vm get_status ANTENA_LISBOA 
+May 10 16:17:02.907 HYPERVISOR: exec_cmd: vm get_status ANTENA_LISBOA 
+May 10 16:17:02.907 HYPERVISOR: exec_cmd: vm extract_config ANTENA_LISBOA 
+May 10 16:17:02.999 HYPERVISOR: exec_cmd: vm get_status ANTENA_LISBOA 
+May 10 16:17:02.999 HYPERVISOR: exec_cmd: vm extract_config ANTENA_LISBOA 
+May 10 16:17:03.000 HYPERVISOR: exec_cmd: vm delete ANTENA_LISBOA 
+May 10 16:17:03.000 VM: VM ANTENA_LISBOA destroyed.
+May 10 16:17:03.000 HYPERVISOR: exec_cmd: hypervisor stop 
+May 10 16:17:03.183 HYPERVISOR: Stopped.
+May 10 16:17:03.183 GENERAL: reset done.
